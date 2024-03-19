@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Italiana&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.underlineanim:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    background: #fff;
+    transition:  0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.underlineanim:hover::after{
+    width: 100%; 
+}
+.herobg{
+    background-image: url('./img/pizzabg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.herosection{
+    height: 800px;
+}
+.storyimg{
+    height: 400px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.handfont {
+    font-family: "Fasthand", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+.goldcolor{
+    color:#D6AD60;
+}
+.montfont{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.largetext{
+    font-size: 86px;
+}
+.darkbluebg{
+    background-color: #0b161a;
+}
+.darkbluebg2{
+    background-color: #141e20;
+}
+.social-icon button{
+    padding: 1rem;
+    background-color: white;
+}
+.social-icon button:hover{
+    background-color: #D6AD60;
+}
+.menu-section{
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(https://cdn.pixabay.com/photo/2017/10/07/11/56/pizza-2826307_1280.jpg);
+    
+}
+.parallax {
+    min-height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 992px) {
+    .herobg{
+        background-repeat: no-repeat;
+        background-position:28% 75%;
+    }
+    .storyimg{
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
+  }
